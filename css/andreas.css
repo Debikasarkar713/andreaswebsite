@@ -1,5 +1,6 @@
 @import url('bootstrap.css');
 @import url('bootstrap-responsive.css');
+@import url('responsive.css');
 
 body{
 background-color: black;
@@ -7,6 +8,9 @@ border-style: solid;
 border-color: #900000;
 font-family: 'Lato', sans-serif;
 margin: 0 auto;
+height: 100%;
+
+
 
 }
 
@@ -17,7 +21,8 @@ margin: 0 auto;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  height: 800px;
+  height: 100%;
+  width: 100%;
 }
 
 .background2{
@@ -47,6 +52,21 @@ li{
   list-style: none;
   }
 
+nav{
+  color: white;
+}
+  .nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > li {
+list-style: none;
+}
+
+
+
 #about{
   color:white;
   margin-top: 30px;
@@ -57,7 +77,8 @@ li{
   font-family: 'Alegreya Sans SC', sans-serif;
 
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
   letter-spacing: 1px;
   text-shadow: 0 0 10px black;
 
@@ -97,7 +118,7 @@ h5{
 
 #services{
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 50px;
 }
 
@@ -116,9 +137,7 @@ h5{
   padding: 10px;
   letter-spacing: 2px;
 }
-nav{
-  color: white;
-}
+
 
 /* code taken from code pen */
 div.con
@@ -196,7 +215,7 @@ div.highlightTextIn a:before
   width: 40%;
 }*/
 
-.carousel,
+/*.carousel,
 .item,
 .active {
 
@@ -212,21 +231,104 @@ margin-bottom: 100px;
 
 /* Background images are set within the HTML using inline CSS, not here */
 
-.fill {
-    margin-left: 375px;
-    margin-right: 200px;
-    width: 500px;
-    height: 400px;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
+
+/*gallery section*/
+.margins{
+ margin-left: 240px;
 }
-.carousel-caption{
-  margin-top: 10px;
-  height:30px;
+
+#gallery{
+
+  margin-bottom: 50px;
 }
 
 
+
+#gallery .portfolio-item {
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50%;
+  width:  25%;
+  display: table;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+
+
+}
+
+    .details {
+      height: 260px;
+      background: #fff;
+      display: table-cell;
+      vertical-align: middle;
+      opacity: 0;
+      transition: 0.3s;
+      text-align: center;
+}
+      h6 {
+        font-size: 25px;
+        transition: transform 0.3s, opacity 0.3s;
+        transform: translate3d(0, -15px, 0);
+        font-weight: 700;
+        color: $heading-color;
+      }
+
+      #gallery .portfolio-item .details h6 {
+  font-size: 16px;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  font-weight: 700;
+  color: gray;
+}
+
+#gallery .portfolio-item:hover .details {
+  opacity: 0.8;
+}
+
+#gallery .portfolio-item:hover .details h4 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+      /*span {
+        display: block;
+        color: $text-color;
+        font-size: 13px;
+        transition: transform 0.3s, opacity 0.3s;
+        transform: translate3d(0, 15px, 0);
+      }*/
+
+
+ .hover.details {
+      opacity: 0.8;
+}
+      h6 {
+        transform: translate3d(0, 0, 0);
+      }
+      /*span {
+        transform: translate3d(0, 0, 0);
+      }
+*/
+
+
+/*service item*/
+
+.muscle img
+{
+  width:20%;
+
+  margin-top: -9px;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        height: 100%;
+    }
+}
