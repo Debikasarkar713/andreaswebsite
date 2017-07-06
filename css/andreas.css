@@ -21,7 +21,7 @@ height: 100%;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  height: 120%;
+  height: 100%;
   width: 100%;
 }
 
@@ -334,6 +334,15 @@ margin-bottom: 100px;
     body {
         height: 100%;
 
+    }
+
+    .background1{
+      height: 100%;
+      width: 150%
+    }
+    .background2{
+      height: 100%;
+      width: 150%;
     }
 
     #gallery{
