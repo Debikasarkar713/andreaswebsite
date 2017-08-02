@@ -1,4 +1,4 @@
-$('nav a').click(function () {
+$('#nav-menu-container a').click(function () {
   var $href = $(this).attr('href');
   console.log($href)
   $('body').stop().animate({

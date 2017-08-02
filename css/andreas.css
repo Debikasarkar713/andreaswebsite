@@ -331,23 +331,19 @@ margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-        height: 100%;
 
-    }
 
     .background1{
       height: 100%;
-      width: 150%
+      width: 100%
     }
     .background2{
       height: 100%;
-      width: 150%;
-    }
-
-    #gallery{
       width: 100%;
     }
+
+
+
 
     #about{
     margin: 0 auto;
@@ -377,6 +373,20 @@ margin-bottom: 100px;
      /*text-align:center;*/
      font-size: 12px;
 
+    }
+
+    #gallery .portfolio-item{
+    background-position: center center;
+    background-size:;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50%;
+    width:  50%;
+    display: table;
+    overflow: hidden;
+  /*margin-right: 10px;
+  margin-bottom: 10px;*/
+  float: left;
     }
 
     #contact{
